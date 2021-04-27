@@ -57,7 +57,7 @@
 }
 
 .card-body {
-  @apply bg-white py-3 px-5 rounded-xl mb-5 mb-5 dark:bg-gray-700;
+  @apply bg-white py-3 px-5 rounded-xl dark:bg-gray-700;
 }
 
 .card-header {
@@ -69,15 +69,15 @@
 }
 
 .button-bar {
-  @apply focus:outline-none text-white text-sm py-2.5 px-5;
+  @apply focus:outline-none text-white text-sm py-2.5 px-5 mt-2;
 }
 
 .button-bar-first {
-  @apply focus:outline-none text-white text-sm py-2.5 px-5 rounded-l-md;
+  @apply focus:outline-none text-white text-sm py-2.5 px-5 mt-2 rounded-l-md;
 }
 
 .button-bar-last {
-  @apply focus:outline-none text-white text-sm py-2.5 px-5 rounded-r-md;
+  @apply focus:outline-none text-white text-sm py-2.5 px-5 mt-2 rounded-r-md;
 }
 
 .toast-primary {
@@ -98,4 +98,8 @@
 
 .toast-info {
   @apply bg-purple-50 p-4 rounded flex items-start text-purple-700 my-4 shadow-lg max-w-2xl border border-purple-600;
+}
+
+.form-control {
+  @apply mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none dark:text-white;
 }

@@ -1,5 +1,71 @@
-<div class="grid grid-cols-2 gap-8">
-  <div class="ml-8 card-body">
+<div class="grid grid-cols-2 mb-5 mr-5 ml-5">
+  <div class="mr-5 card-body">
+    <span class="card-header"> Create Chart</span>
+    <div class="grid grid-cols-2">
+      <input
+        type="name"
+        name="name"
+        id="name"
+        placeholder="Name"
+        class="form-control"
+      />
+      <input
+        type="type"
+        name="type"
+        id="type"
+        placeholder="Type"
+        class="ml-5 form-control"
+      />
+    </div>
+    <div class="w-full mt-5 flex items-center justify-center dark:bg-gray-800">
+      <label
+        class="flex flex-col items-center border py-6 w-full bg-white uppercase cursor-pointer dark:bg-gray-800 dark:border-gray-800 hover:text-blue-500"
+      >
+        <svg
+          class="w-8 h-8"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
+          />
+        </svg>
+        <span class="mt-2 text-base leading-normal">Select a file</span>
+        <input type="file" class="hidden" />
+      </label>
+    </div>
+
+    <div class="mt-5 text-right">
+      <button class="ml-2 btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <div class="ml-5 card-body">
+    <span class="card-header"> Create Chart from API</span>
+    <div class="grid grid-cols-2">
+      <input
+        type="httpReqType"
+        name="httpReqType"
+        id="httpReqType"
+        placeholder="Http Type (Post/Get)"
+        class="form-control"
+      />
+      <input
+        type="url"
+        name="url"
+        id="url"
+        placeholder="URL"
+        class="ml-5 form-control"
+      />
+    </div>
+    <div class="mt-5 text-right">
+      <button class="ml-2 btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid-cols-2 gap-8 ml-5 mr-5">
+  <div class="card-body">
     <div>
       <span class="card-header"> 3 Month Data </span>
       <button
@@ -18,7 +84,7 @@
     </div>
     <canvas #canvas name="canvas" id="canvas"></canvas>
   </div>
-  <div class="mr-8 card-body">
+  <div class="card-body">
     <div>
       <span class="card-header">5 Month Data</span>
       <button
