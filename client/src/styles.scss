@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// global styles can be handled here
+.btn {
+  @apply focus:outline-none text-white text-sm py-2.5 px-5 rounded-md hover:shadow-lg;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.btn-primary-disabled {
+  @apply bg-blue-300 hover:shadow-none;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-600;
+}
+
+.btn-secondary-disabled {
+  @apply bg-gray-300 hover:shadow-none;
+}
+
+.btn-success {
+  @apply bg-green-500 hover:bg-green-600;
+}
+
+.btn-success-disabled {
+  @apply bg-green-300 hover:shadow-none;
+}
+
+.btn-danger {
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+.btn-danger-disabled {
+  @apply bg-red-300 hover:shadow-none;
+}
+
+.btn-warning {
+  @apply bg-yellow-500 hover:bg-yellow-600;
+}
+
+.btn-warning-disabled {
+  @apply bg-yellow-300 hover:shadow-none;
+}
+
+.btn-info {
+  @apply bg-purple-500 hover:bg-purple-600;
+}
+
+.btn-info-disabled {
+  @apply bg-purple-300 hover:shadow-none;
+}
+
+.card-body {
+  @apply bg-white py-3 px-5 rounded-xl mb-5 mb-5 dark:bg-gray-700;
+}
+
+.card-header {
+  @apply text-2xl;
+}
+
+.viewport-content {
+  @apply bg-gray-100 bg-gray-100 font-sans py-6 dark:bg-gray-800 dark:text-white;
+}
+
+.button-bar {
+  @apply focus:outline-none text-white text-sm py-2.5 px-5;
+}
+
+.button-bar-first {
+  @apply focus:outline-none text-white text-sm py-2.5 px-5 rounded-l-md;
+}
+
+.button-bar-last {
+  @apply focus:outline-none text-white text-sm py-2.5 px-5 rounded-r-md;
+}
+
+.toast-primary {
+  @apply bg-blue-50 p-4 rounded flex items-start text-blue-700 my-4 shadow-lg max-w-2xl border border-blue-600;
+}
+
+.toast-success {
+  @apply bg-green-50 p-4 rounded flex text-green-700 my-4 shadow-lg max-w-2xl text-left border border-green-600 tracking-wider flex-1;
+}
+
+.toast-danger {
+  @apply bg-red-50 p-4 rounded flex text-red-700 my-4 shadow-lg max-w-2xl border text-left border-red-600;
+}
+
+.toast-warning {
+  @apply bg-yellow-50 p-4 rounded flex items-start text-yellow-700 my-4 shadow-lg max-w-2xl border border-yellow-600;
+}
+
+.toast-info {
+  @apply bg-purple-50 p-4 rounded flex items-start text-purple-700 my-4 shadow-lg max-w-2xl border border-purple-600;
+}
